@@ -46,3 +46,22 @@ img,video{
 /* ================= LAYOUT and MEDIA QUERIES ================= */
 
 
+.list-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+@media (min-width: 800px){
+    .list-grid{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 3rem;
+    }
+}
+
+@media (min-width: 1200px){
+    .list-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 3rem;
+    }
+}
