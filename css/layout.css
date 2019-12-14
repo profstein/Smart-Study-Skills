@@ -137,10 +137,7 @@ footer {
 	main h3 {
 		margin-top: 0;
 	}
-	.retrieval .why,
-	.retrieval .how {
-		grid-column: 1/-1;
-	}
+
 	.what {
 		font-size: 1.5rem;
 		grid-column: 1/-1;
@@ -155,6 +152,10 @@ footer {
 		grid-template-columns: repeat(auto-fill, 30rem);
 		grid-template-columns: 1fr 1fr;
 	}
+    .retrieval .why,
+	.retrieval .how {
+		grid-column: 1/-1;
+	}
 
 	.resources {
 		grid-column: 1/-1;
@@ -167,6 +168,10 @@ footer {
 		grid-template-columns: 1fr 1fr;
 		grid-template-areas: "resources resources" "videos videos" "downloads podcasts"
 	}
+
+    .retrieval .tips h3{
+        grid-row: span 4;
+    }
 	footer {
 		grid-template-columns: 1fr 1fr
 	}
@@ -179,5 +184,10 @@ footer {
 	.list-grid {
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 		grid-gap: 3rem;
+	}
+    .retrieval .why,
+	.retrieval .how{
+		grid-column: 1/-1;
+        grid-template-columns: 1fr;
 	}
 }

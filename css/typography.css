@@ -4,12 +4,34 @@
 @import url('https://fonts.googleapis.com/css?family=Hepta+Slab:100,200,400,800,900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Josefin+Slab:300&display=swap');
 
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:100|Barlow+Semi+Condensed:100|Barlow:100|Dosis:200|IBM+Plex+Sans:400,400i,700|Poiret+One|Sulphur+Point:300&display=swap');
+/*
+
+
+
+    font-family: 'Poiret One', cursive;
+
+    font-family: 'Dosis', sans-serif;
+
+    font-family: 'Sulphur Point', sans-serif;
+
+    font-family: 'Barlow', sans-serif;
+
+    font-family: 'Barlow Condensed', sans-serif;
+
+    font-family: 'IBM Plex Sans', sans-serif;
+
+    font-family: 'Barlow Semi Condensed', sans-serif;
+
+
+*/
 /* The html and body selectors below set the base font for the entire page */
 html {font-size: 1.2rem;}
 
 body {
   font-family: 'Gentium Book Basic', serif;
 	font-family: Lato, sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 200;
   line-height: 1.7;
   color: #333;
@@ -25,6 +47,9 @@ body {
 p, li {
   margin-top: 0;
   margin-bottom: 1em;
+}
+b, strong {
+    font-weight: 700;
 }
 
 /* Base Styling for headings  */
@@ -92,6 +117,12 @@ a:visited{
   border-bottom: 1px solid #999999; /*adds in border instead of underline, make sure to match value given for "color"*/
 }
 
+.site-title{
+    font-family: 'Poiret One', cursive;
+    font-weight: 100;
+    margin:3rem 0;
+    letter-spacing: -.25rem;
+}
 
 .page-title{
 	font-family: 'Hepta Slab', serif;
