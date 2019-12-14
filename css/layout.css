@@ -2,37 +2,51 @@
    Responsive Styling and Layout
    ==================================  */
 
+
 /* ================= Use Border Box model ================= */
+
 html {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
-*, *:before, *:after {
-  box-sizing: inherit;
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
 }
+
 
 /* ================= Basic Responsive Images and Video ================= */
-img,video{
-  width: auto;
-  height: auto;
-  max-width: 100%;
+
+img,
+video {
+	width: auto;
+	height: auto;
+	max-width: 100%;
 }
 
+
 /* ================= Responsive Embedded Video ================= */
+
+
 /* to use this add a div with class videoWrapper around the iframe markup copied from YouTube or Vimeo. Then also add a ratio-16-9 (most common) or ratio-4-3 class to the wrapper depending on the aspect ratio of your video */
+
 .videoWrapper {
 	position: relative;
 	padding-top: 25px;
 	height: 0;
-  clear:both;
-  outline:1px solid red;
+	clear: both;
+	outline: 1px solid red;
 }
 
-.videoWrapper.ratio-16-9{
-    padding-bottom: 56.25%; /* 16:9 */
+.videoWrapper.ratio-16-9 {
+	padding-bottom: 56.25%;
+	/* 16:9 */
 }
 
-.videoWrapper.ratio-4-3{
-    padding-bottom: 75%; /* 4:3 */
+.videoWrapper.ratio-4-3 {
+	padding-bottom: 75%;
+	/* 4:3 */
 }
 
 .videoWrapper iframe {
@@ -43,25 +57,127 @@ img,video{
 	height: 100%;
 }
 
+
 /* ================= LAYOUT and MEDIA QUERIES ================= */
 
-
-.list-grid{
-    display: grid;
-    grid-template-columns: 1fr;
-
+body {
+	padding: 0 .5rem;
 }
 
-@media (min-width: 800px){
-    .list-grid{
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 3rem;
-    }
+main {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 20px;
 }
 
-@media (min-width: 1200px){
-    .list-grid{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-gap: 3rem;
-    }
+footer {
+	margin-top: 2rem;
+	border-top: 1px solid #555;
+	padding: 1rem 0;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 20px;
+}
+
+.list-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.resources {
+	display: grid;
+	grid-gap: 2rem;
+	grid-template-columns: 1fr;
+	grid-template-areas: "resources" "videos" "downloads" "podcasts";
+}
+
+.resources h3 {
+	grid-area: resources;
+}
+
+.videos {
+	grid-area: videos;
+}
+
+.downloads {
+	grid-area: downloads;
+}
+
+.podcasts {
+	grid-area: podcasts;
+}
+
+@media (min-width: 800px) {
+	body {
+		padding: 2rem;
+	}
+	main {
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 2.5rem;
+		grid-row-gap: 4rem;
+		grid-template-rows: 100vh;
+	}
+	/*		center vertically*/
+	.page-title,
+	.attractor {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.attractor {
+		font-size: 3.5rem;
+		line-height: 1;
+		padding-right: 1rem;
+		margin-bottom: 0;
+	}
+	.page-title {
+		/*		grid-column: 1/-1;*/
+		margin: 0;
+	}
+	main h3 {
+		margin-top: 0;
+	}
+	.retrieval .why,
+	.retrieval .how {
+		grid-column: 1/-1;
+	}
+	.what {
+		font-size: 1.5rem;
+		grid-column: 1/-1;
+		width: 45rem;
+		max-width: 85%;
+		margin: 0 auto;
+	}
+
+	.why, .how, .when, .tips{
+		grid-column: 1/-1;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, 30rem);
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.resources {
+		grid-column: 1/-1;
+	}
+	.list-grid {
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 3rem;
+	}
+	.resources {
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: "resources resources" "videos videos" "downloads podcasts"
+	}
+	footer {
+		grid-template-columns: 1fr 1fr
+	}
+	footer .designed {
+		text-align: right;
+	}
+}
+
+@media (min-width: 1200px) {
+	.list-grid {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-gap: 3rem;
+	}
 }

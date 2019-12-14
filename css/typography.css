@@ -1,14 +1,17 @@
 /* Optional, include a web font  */
-@import url('https://fonts.googleapis.com/css?family=Lato:700');
-@import url('https://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Lato:200,400,400i,700');
+/*@import url('https://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400i,700,700i');*/
+@import url('https://fonts.googleapis.com/css?family=Hepta+Slab:100,200,400,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab:300&display=swap');
 
 /* The html and body selectors below set the base font for the entire page */
-html {font-size: 1em;}
+html {font-size: 1.2rem;}
 
 body {
   font-family: 'Gentium Book Basic', serif;
-  font-weight: 400;
-  line-height: 1.5;
+	font-family: Lato, sans-serif;
+  font-weight: 200;
+  line-height: 1.7;
   color: #333;
 
 /*   there are other ways to do this but it's good to remember not to let text run right up to the edge of borders or color changes, images etc.' */
@@ -26,8 +29,9 @@ p, li {
 
 /* Base Styling for headings  */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
+  font-weight: 200;
   font-family: Lato, sans-serif;
+	font-family: 'Hepta Slab', serif;
 }
 
 /* For each of your headings at minimum set the margin, size, line-height. Adjust font-weight and other properties as needed. */
@@ -47,7 +51,7 @@ h2 {
 h3 {
   font-size: 2.25em;
   line-height: 1;
-  margin: 1.5em 0 0.25em 0;
+  margin: 2.5em 0 0.25em 0;
 }
 
 h4 {
@@ -84,6 +88,29 @@ a:hover{
   border-bottom: 1px solid #005599; /*adds in border instead of underline, make sure to match value given for "color" */
 }
 a:visited{
-  color: #880099;
-  border-bottom: 1px solid #880099; /*adds in border instead of underline, make sure to match value given for "color"*/
+  color: #999999;
+  border-bottom: 1px solid #999999; /*adds in border instead of underline, make sure to match value given for "color"*/
 }
+
+
+.page-title{
+	font-family: 'Hepta Slab', serif;
+	font-weight: 100;
+}
+
+.attractor{
+	font-family: 'Hepta Slab', serif;
+	font-weight: 400;
+	font-family: 'Josefin Slab', serif;
+	font-weight: 300;
+	font-size: 3rem;
+}
+
+.content-type{
+/*	font-style: italic;*/
+	text-transform: uppercase;
+	color: #999;
+	font-size: .8rem;
+	padding-right: .5rem;
+}
+
