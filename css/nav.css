@@ -3,7 +3,7 @@ header.site-header{
   font-weight: 400;
 }
 header.site-header .logo img{
-  width:320px;
+  width:260px;
 }
 
 header.site-header .bottom-header {
@@ -17,7 +17,7 @@ header.site-header .bottom-header:after, header.site-header .top-header:after {
     clear: both;
 }
 
-@media (max-width: 1285px){
+@media (max-width: 1347px){
   header.site-header .bottom-header {
     margin-right: 0;
   }
@@ -27,7 +27,7 @@ header.site-header nav {
     float: right;
     padding-top: 15px;
 }
-@media (max-width: 1285px){
+@media (max-width: 1347px){
   header.site-header nav {
     padding-top: 10px;
 }
@@ -39,7 +39,7 @@ header.site-header nav {
     width: 21px;
     height: 21px;
 }
-@media (max-width: 1285px){
+@media (max-width: 1346px){
   .hamburger {
     display: block;
   }
@@ -79,7 +79,7 @@ header.site-header .menu li a {
 	border-bottom: none;
 }
 
-@media (max-width: 1284px){
+@media (max-width: 1347px){
   header.site-header .menu {
     display: none;
     background-color: white;

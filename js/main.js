@@ -4,7 +4,7 @@ var $ = jQuery.noConflict();
 function hamburger(){
 	$(".hamburger").on('click', function(e){
 		e.preventDefault();
-		if(window.innerWidth<1285){
+		if(window.innerWidth<1347){
 			$('nav .mobile-menu').stop(1,0).slideToggle(250,
 				function(){
 					if($(this).css('display') == 'none'){
@@ -21,7 +21,7 @@ function mobileMenuPos(){
 
 	$('nav .mobile-menu').css('top', h + 'px');
 
-	if(window.innerWidth>1285){
+	if(window.innerWidth>1346){
 		$('nav .mobile-menu').css('display','none');
 	}
 }
