@@ -5,3 +5,9 @@ body{
 .resource-type{
     color:#999;
 }
+
+.tips{
+    background-color: #731702;
+    color: #fff;
+    padding: 2rem;
+}

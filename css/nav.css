@@ -35,7 +35,8 @@ header.site-header nav {
 
 .hamburger {
     display: none;
-    background: linear-gradient(to bottom, #666666 0%, #666666 20%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 40%, #666666 40%, #666666 60%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0) 80%, #666666 80%, #666666 100%);
+    background: linear-gradient(to bottom, #666666 0%, #666666 20%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 40%, #666666 40%, #666666 60%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0) 80%, #020873 80%, #020873 100%);
+    background: linear-gradient(to bottom, #020873 0%, #020873 20%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 40%, #020873 40%, #020873 60%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0) 80%, #020873 80%, #020873 100%);
     width: 21px;
     height: 21px;
 }
@@ -73,6 +74,7 @@ header.site-header .menu li:last-of-type {
 header.site-header .menu li a {
     text-decoration: none;
     color: #666666;
+    color: #020873;
 	border-bottom: none;
 }
 .site-header .logo{
