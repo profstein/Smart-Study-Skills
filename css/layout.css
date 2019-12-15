@@ -60,6 +60,7 @@ video {
 
 /* ================= LAYOUT and MEDIA QUERIES ================= */
 
+/* ================= Base Layout (mobile) ================= */
 body {
     padding: 0 .5rem;
 }
@@ -83,6 +84,14 @@ footer {
 .attractor {
     display: flex;
     flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.tagline{
+    display: flex;
+    flex-direction: column;
     align-items:center;
     justify-content: space-between;
     margin-top: 2rem;
@@ -121,6 +130,9 @@ footer {
     grid-area: podcasts;
 }
 
+
+
+
 @media (min-width: 800px) {
     body {
         padding: 2rem;
@@ -135,7 +147,7 @@ footer {
 
     /*		center vertically*/
     .title,
-    .attractor {
+    .attractor,.tagline {
         flex-direction: column;
     align-items:center;
     justify-content: center;
@@ -206,6 +218,16 @@ footer {
 
     footer .designed {
         text-align: right;
+    }
+
+    .designedby .credits{
+        grid-column: 1/-1; /*span across parent grid */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+    }
+    .designedby .credits .images{
+        grid-column: 2/3;
     }
 }
 

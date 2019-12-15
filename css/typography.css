@@ -124,6 +124,7 @@ a:visited{
   border-bottom: 1px solid #731702; /*adds in border instead of underline, make sure to match value given for "color"*/
 }
 
+/* ================== Text Styles that are the same on each page ==================== */
 .site-title{
     font-family: 'Poiret One', cursive;
     font-weight: 100;
@@ -149,6 +150,7 @@ a:visited{
 }
 .page-icon .highlight{
     color: #731702;
+    color: #fff
 }
 
 .attractor{

@@ -15,8 +15,122 @@ body{
     color:#999;
 }
 
-.tips{
+.tips,.featured{
     background-color: #731702;
     color: #fff;
     padding: 2rem;
 }
+.featured a, .featured a:visited, .featured a:hover{
+    color: #fff;
+     border-bottom: 1px solid #fff;
+}
+
+
+/* ============== Home Page specific ============== */
+
+.home .tagline p:first-child{
+    	font-family: 'Hepta Slab', serif;
+	font-weight: 100;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 0;
+}
+.home .intro{
+    font-size: 1.4rem;
+    text-align: justify;
+}
+.home .attractor{
+    text-align: justify;
+    padding-right: 0;
+}
+
+.featured h3{
+        text-align: center;
+}
+.featured p{
+    font-size: 1.2rem;
+    text-align: justify;
+}
+.featured .featured-icon{
+    font-size: 4rem;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.home .study-skills h2{
+        font-family: 'Poiret One', cursive;
+    font-weight: 100;
+    margin:3rem 0;
+    letter-spacing: -.25rem;
+}
+
+.home .skill{
+    text-align: center;
+}
+.skill p{
+    text-align: justify;
+}
+.skill .internal-link{
+    margin-top: 0;
+    text-align: right;
+}
+.home .skill-image{
+    text-align: center;
+    font-size: 4rem;
+}
+.skill-image .highlight{
+    color: #fff;
+}
+.skill-image .highlight2{
+    color: #731702;
+}
+
+.skill-image .fa-comment{
+    position: relative;
+    top: -2.5rem;
+    left: -1rem;
+}
+
+@media (min-width: 800px){
+    .home .tagline{
+        margin-top: 0;
+    }
+    .home .tagline p:first-child{
+        font-size: 2.2rem;
+
+    }
+    .home .intro{
+        font-size: 1.2rem;
+    }
+    .home .attractor{
+    font-size: 2rem;
+        margin-top: 0;
+    }
+
+
+    .home .study-skills{
+        grid-column: 1/-1;
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        grid-gap: 2.5rem;
+    }
+    .home .study-skills h2{
+        margin-top: 0;
+        grid-column: 1/-1;
+        text-align: center;
+        border-bottom: 1px solid #efefef;
+        height: 100%;
+    }
+    .video-overview{
+        grid-column: 1/-1;
+    }
+}/* end media 800 */
+
+@media (min-width: 1200px){
+    .home .skill-image{
+    font-size: 5rem;
+    }
+}
+
+
+
