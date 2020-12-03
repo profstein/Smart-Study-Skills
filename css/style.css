@@ -6,10 +6,12 @@ yellow #F2A922
 orange #F29727
 dark orange #BF5B04
 dark red #731702
+
+mint #B3F2E0
 */
 
 body{
-    background-color: #F2A922;
+    background-color: #B3F2E0;
 }
 .resource-type{
     color:#999;
